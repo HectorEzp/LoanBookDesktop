@@ -1,0 +1,20 @@
+# Copia este archivo como config.properties y completa los valores.
+# config.properties NO debe subirse a Git (está en .gitignore).
+
+# --- Túnel SSH hacia la instancia EC2 ---
+ssh.host=IP_PUBLICA_DE_LA_EC2
+ssh.port=22
+ssh.user=ubuntu
+# Ruta a la llave privada .pem (fuera del repositorio)
+ssh.keyfile=C:/Users/TU_USUARIO/.ssh/mi-llave.pem
+
+# --- RDS (endpoint privado, se alcanza a través de la EC2) ---
+rds.host=tu-endpoint.xxxxxxxx.us-east-1.rds.amazonaws.com
+rds.port=3306
+# Puerto local por donde se abre el túnel
+local.port=3307
+
+# --- Base de datos ---
+db.name=biblioteca
+db.user=app_desktop
+db.password=CAMBIAR_PASSWORD_DESKTOP

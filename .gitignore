@@ -1,0 +1,10 @@
+config.properties
+*.pem
+*.ppk
+.env
+target/
+*.class
+*.jar
+.idea/
+.vscode/
+*.iml
